@@ -30,7 +30,7 @@ Développé avec Python, utilisable avec Docker.
 
 ---
 
-Si vous voulez simplement vous amuser quelques minutes et héberger le bot sur votre PC en local, c'est possible. Il suffit de télécharger le fichier botquoifeur.py sur le repo et remplacer TOKEN = os.environ["DISCORD_TOKEN"] par TOKEN = VotreTokenSansGuillemets, pareil dans la dernière commande bot.run, mais avec des guillemets cette fois-ci, donc : bot.run("VotreTokenAvecDesGuillemets").
+Si vous voulez simplement vous amuser quelques minutes et héberger le bot sur votre PC en local, c'est possible, mais vous devrez être capable de lancer des scripts python sur votre machine locale. Il suffit de télécharger le fichier botquoifeur.py sur le repo et remplacer TOKEN = os.environ["DISCORD_TOKEN"] par TOKEN = VotreTokenSansGuillemets, pareil dans la dernière commande bot.run, mais avec des guillemets cette fois-ci, donc : bot.run("VotreTokenAvecDesGuillemets").
 
 Il n'est absolument pas recommandé de laisser son token en clair par soucis de sécurité, pensez à le réinitialiser directement sur le portail développeur de Discord si jamais vous pensez avoir pris des risques en ayant partagé ou fait fuiter le token.
 
