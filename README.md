@@ -1,7 +1,7 @@
 
 # 🤖 Quoi ? Feur-bot pour Discord
 
-Un bot Discord très simple qui répond dès qu'un message se termine par « quoi ».
+Un bot Discord qui répond dès qu'un message se termine par « quoi » (avec d'autres surprises).
 
 Développé avec Python, utilisable avec Docker.
 
