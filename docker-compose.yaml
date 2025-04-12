@@ -1,0 +1,9 @@
+services:
+  botquoifeur:
+    build: .
+    container_name: botquoifeur
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: python botquoifeur.py
