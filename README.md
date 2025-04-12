@@ -58,3 +58,7 @@ Pour éteindre le bot, vous pouvez utiliser la commande `make down`. Ces command
 ## Ajouter des messages
 
 Le bot change de message aléatoire et sélectionne un message écrit (« feur »), ou un meme en vidéo hébergé au préalable (j'aime bien catbox.moe). Si vous souhaitez les changer ou en ajouter, vous pouvez le faire dans le fichier botquoifeur.py, à partir de la ligne 16 chaque ligne est un message que le bot pourra utiliser (veillez à bien respecter le format, la phrase ou le lien entre guillemets, avec une virgule avant le retour à la ligne sauf pour la dernière entrée).
+
+
+## Licence
+Aucune, j'ai juste vibecodé. Fait par moi.
