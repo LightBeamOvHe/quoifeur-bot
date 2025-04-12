@@ -61,4 +61,4 @@ Le bot change de message aléatoire et sélectionne un message écrit (« feur �
 
 
 ## Licence
-Aucune, j'ai juste vibecodé. Fait par moi.
+Aucune, j'ai juste vibecodé. Fait par chatgpt sous ma supervision.
