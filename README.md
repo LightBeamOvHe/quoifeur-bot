@@ -72,10 +72,13 @@ En feuilletant le fichier botquoifeur.py vous pourrez trouver les listes de mots
 
 Il y a aussi des commandes Discord qui permettent de changer certains paramètres, plus particulièrement la probabilité que le bot réponde à un message.
 
-!setprob 1 1 (le premier chiffre concerne la détection du mot quoi au milieu d'un message, le 2ème concerne la détection en fin de message. Il faut insérer un nombre entre 0 et 1, sachant que 1 = 100%)
-!help (permet d'afficher un rappel de l'ensemble des commandes)
-!addadmin @utilisateur (permet d'ajouter un admin qui pourra changer les probabilités et utiliser ces commandes)
-!config (permet d'afficher la configuration actuelle sur le serveur)
+`!setprob 1 1` (le premier chiffre concerne la détection du mot quoi au milieu d'un message, le 2ème concerne la détection en fin de message. Il faut insérer un nombre entre 0 et 1, sachant que 1 = 100%).
+
+`!help` (permet d'afficher un rappel de l'ensemble des commandes)
+
+`!addadmin @utilisateur` (permet d'ajouter un admin qui pourra changer les probabilités et utiliser ces commandes)
+
+`!config` (permet d'afficher la configuration actuelle sur le serveur)
 
 
 ## 📕 Licence
