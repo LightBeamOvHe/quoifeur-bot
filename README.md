@@ -68,12 +68,14 @@ Actuellement, le bot a plusieurs fonctions.
 
 ## ⌨️ Modifier la configuration
 
-Vous pouvez ouvrir le fichier botquoifeur.py et modifier certains paramètres à votre guise. Tout est commenté pour que vous puissiez savoir ce que vous êtes en train de changer.
+En feuilletant le fichier botquoifeur.py vous pourrez trouver les listes de mots à modifier à votre guise.
 
-**À partir de la ligne 18**, ces variables permettent de configurer la fenêtre de temps de spam, le nombre de réponses maximum dans cette fenêtre, le temps de cooldown une fois la limite dépassée, ainsi que les ID des utilisateurs spéciaux (accompagnées de leurs réponses spéciales).
+Il y a aussi des commandes Discord qui permettent de changer certains paramètres, plus particulièrement la probabilité que le bot réponde à un message.
 
-**À partir de la ligne 30**, il y a 3 blocs différents, chaque bloc correspond à une liste de mots que le bot utilisera selon les cas de figures déjà décrits dans la liste des fonctions du bot. Si vous ajoutez des mots ou des phrases, veillez à strictement respecter la nomenclature, auquel cas le bot pourrait ne plus fonctionner du tout.
-
+!setprob 1 1 (le premier chiffre concerne la détection du mot quoi au milieu d'un message, le 2ème concerne la détection en fin de message. Il faut insérer un nombre entre 0 et 1, sachant que 1 = 100%)
+!help (permet d'afficher un rappel de l'ensemble des commandes)
+!addadmin @utilisateur (permet d'ajouter un admin qui pourra changer les probabilités et utiliser ces commandes)
+!config (permet d'afficher la configuration actuelle sur le serveur)
 
 
 ## 📕 Licence
