@@ -82,4 +82,4 @@ Il y a aussi des commandes Discord qui permettent de changer certains paramètre
 
 
 ## 📕 Licence
-Aucune, j'ai juste vibecodé. Fait par ~~chatgpt~~ DeepSeek, sous ma supervision (au tout début c'était avec ChatGPT mais DeepSeek fonctionne vraiment 100x mieux).
+Aucune, j'ai juste vibecodé. Fait par ~~chatgpt~~ DeepSeek, sous ma supervision.
