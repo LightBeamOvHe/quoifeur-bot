@@ -71,7 +71,7 @@ reponses_feurent = [
 ]
 
 SPECIAL_USERS = {
-    123746587317898909: ["toi tg :pointing_at_the_viewer:", "att tg un peu pour voir", "gênant", "https://files.catbox.moe/lirfo9.mp4"]
+    123746587317898909: ["toi tg :index_pointing_at_the_viewer:", "att tg un peu pour voir", "gênant", "https://files.catbox.moe/lirfo9.mp4"]
 }
 
 # Fonctions de détection
@@ -186,22 +186,18 @@ async def on_message(message):
         if current_time < user_cooldowns[message.guild.id][user_id]:
             return
 
-    # Gestion spéciale pour les utilisateurs listés
-    if user_id in SPECIAL_USERS:
-        await message.channel.send(f"{message.author.mention} {random.choice(SPECIAL_USERS[user_id])}")
-        user_cooldowns[message.guild.id][user_id] = current_time + config["cooldown"]
-        return
-
     # Détection des triggers
     response = None
-    response_type = None
 
     if check_quoient(content) and random.random() < config["prob_end"]:
         response = random.choice(reponses_feurent)
     elif check_quoi_faute(content) and random.random() < config["prob_end"]:
         response = random.choice(reponses_feur_fautes)
     elif check_quoi(content) and random.random() < config["prob_end"]:
-        response = random.choice(reponses_feur)
+        if user_id in SPECIAL_USERS:
+            response = f"{message.author.mention} {random.choice(SPECIAL_USERS[user_id])}"
+        else:
+            response = random.choice(reponses_feur)
     elif contains_exact_quoi(content) and random.random() < config["prob_exact"]:
         response = re.sub(r'\bquoi\b', 'feur', content, flags=re.IGNORECASE)
 
