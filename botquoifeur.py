@@ -56,7 +56,9 @@ user_cooldowns = defaultdict(dict)
 reponses_feur = [
     "feur",
     "https://files.catbox.moe/v5ru9m.mp4",
-    "https://files.catbox.moe/gaw473.mp4"
+    "https://files.catbox.moe/gaw473.mp4",
+    "https://files.catbox.moe/86hqqf.mp4",
+    "https://files.catbox.moe/66b2m4.mp4"
 ]
 
 reponses_feur_fautes = [
