@@ -9,6 +9,28 @@ from collections import defaultdict
 
 TOKEN = os.environ["DISCORD_TOKEN"]
 
+# Chemin du fichier de configuration
+CONFIG_DIR = Path("config")
+CONFIG_DIR.mkdir(exist_ok=True)
+CONFIG_PATH = CONFIG_DIR / "feurbot_config.json"
+
+def load_config():
+    try:
+        if CONFIG_PATH.exists():
+            with open(CONFIG_PATH, 'r') as f:
+                return json.load(f)
+        return {}
+    except Exception as e:
+        print(f"Erreur lors du chargement de la config: {e}")
+        return {}
+
+def save_config(config):
+    try:
+        with open(CONFIG_PATH, 'w') as f:
+            json.dump(config, f, indent=4)
+    except Exception as e:
+        print(f"Erreur lors de la sauvegarde de la config: {e}")
+
 # Remplacez par votre ID Discord
 ADMIN_ID = VotreIDUtilisateurIci
 
